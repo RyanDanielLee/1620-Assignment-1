@@ -16,7 +16,7 @@ h1,
 h3,
 p,
 ul li {
-  color: #256993;
+  color: #1D5172;
 }
 
 ul li {
@@ -132,8 +132,8 @@ p {
 textarea {
   text-align: left;
   border-radius: 0.8rem;
-  border-color: #256993;
-  border: 0.2rem solid #256993;
+  border-color: #1D5172;
+  border: 0.2rem solid #1D5172;
   width: 100%;
 }
 
