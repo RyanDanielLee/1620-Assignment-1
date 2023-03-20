@@ -75,7 +75,7 @@ p {
   align-self: flex-start;
 }
 
-.donw-aligned {
+.down-aligned {
   align-self: flex-end;
 }
 
@@ -100,6 +100,32 @@ p {
 /* Gap Styles */
 .gap {
   gap: 0.8rem;
+}
+
+/* Button Styles */
+.newNoteButton,
+.darkModeButton,
+.saveButton,
+.cancelButton {
+  border-radius: 0.8rem;
+  border: none;
+  color: white;
+}
+
+.newNoteButton {
+  background-color: #375f68;
+}
+
+.darkModeButton {
+  background-color: #56536a;
+}
+
+.saveButton {
+  background-color: #375f68;
+}
+
+.cancelButton {
+  background-color: #9b332c;
 }
 
 
