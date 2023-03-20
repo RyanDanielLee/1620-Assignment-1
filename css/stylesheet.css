@@ -149,4 +149,11 @@ textarea {
   }
 }
 
-
+@media only screen and (max-width: 650px) {
+  .fourColumnGrid {
+    grid-template-columns: 1fr;
+  }
+  textarea {
+    height: 7em;
+  }
+}
