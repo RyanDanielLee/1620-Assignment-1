@@ -1,0 +1,30 @@
+/* General HTML Styles*/
+html,
+body {
+  font-size: 60%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+h1,
+h3,
+p,
+ul li {
+  color: #256993;
+}
+
+ul li {
+  list-style: square;
+}
+
+p {
+  margin: 0;
+}
+
+
