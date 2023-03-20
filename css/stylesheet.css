@@ -66,4 +66,40 @@ p {
   background-color: #faf4ec;
 }
 
+/* Alignment Styles */
+.center-aligned {
+  text-align: center;
+}
+
+.left-aligned {
+  align-self: flex-start;
+}
+
+.donw-aligned {
+  align-self: flex-end;
+}
+
+/* Justified Styles */
+.betweenJustify {
+  justify-content: space-between;
+}
+
+.centerJustify {
+  justify-content: center;
+}
+
+/* Padding Styles */
+.smallPadding {
+  padding: 0.8rem;
+}
+
+.bigPadding {
+  padding: 1.6rem;
+}
+
+/* Gap Styles */
+.gap {
+  gap: 0.8rem;
+}
+
 
