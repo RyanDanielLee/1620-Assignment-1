@@ -27,4 +27,14 @@ p {
   margin: 0;
 }
 
+/* Footer Styles */
+.footerImage {
+    width: 5.0rem;
+    height: 5.0rem;
+  }
+  
+  .footer {
+    margin-top: auto;
+  }
+
 
