@@ -142,3 +142,11 @@ textarea {
   color: black;
 }
 
+/* Media Queries */
+@media (min-width: 900px) {
+  .fourColumnGrid {
+    grid-template-columns: 1fr 5fr;
+  }
+}
+
+
