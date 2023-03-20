@@ -37,4 +37,33 @@ p {
     margin-top: auto;
   }
 
+/* Layout Styles */
+.mainContainer {
+  display: grid;
+  height: 100%;
+}
+
+.fourColumnGrid {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftColumnColor {
+  background-color: #f3e9de;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainColor {
+  background-color: #faf4ec;
+}
+
 
