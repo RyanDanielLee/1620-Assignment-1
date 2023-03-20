@@ -128,4 +128,17 @@ p {
   background-color: #9b332c;
 }
 
+/* Input Styles */
+textarea {
+  text-align: left;
+  border-radius: 0.8rem;
+  border-color: #256993;
+  border: 0.2rem solid #256993;
+  width: 100%;
+}
+
+::placeholder {
+  opacity: 1;
+  color: black;
+}
 
