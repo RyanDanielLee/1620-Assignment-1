@@ -5,8 +5,16 @@ const saveButton = document.querySelector(".saveButton");
 const textArea = document.querySelector("textarea");
 const newNoteButton = document.querySelector(".newNoteButton");
 const noteList = document.querySelector(".left-aligned");
+const ulList = document.querySelector("ul");
 
 let notesArray = [];
+
+const placeHolder = [
+    {title: "Note One", body: "This is the first note"},
+    {title: "Note Two", body: "This is the second note"}
+];
+
+notesArray.concat(placeHolder);
 
 //Dark & Light Theme Toggle
 darkModeButton.addEventListener('click', () => {
@@ -36,7 +44,6 @@ newNoteButton.addEventListener('click', () => {
 
 //Save Button
 saveButton.addEventListener("click", () => {
-
     const newNoteTitle = prompt("Enter the title of the note");
 
     const newNote = {
@@ -50,4 +57,16 @@ saveButton.addEventListener("click", () => {
     newListElement.textContent = newNoteTitle;
     noteList.appendChild(newListElement);
     textArea.value = "";
+});
+
+ulList.addEventListener("click", (event) => {
+    const noteTitle = event.target.textContent;
+
+    const note = notesArray.find(note =>
+        note.title === noteTitle
+    );
+
+    if (note) {
+        textArea.value = note.body;
+    }
 });
