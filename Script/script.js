@@ -1,3 +1,12 @@
+/**
+ * @fileoverview This file contains the JavaScript code for the
+ * Notes web app. It is used to create, edit, and delete notes.
+ * It also has a dark mode toggle. 
+ * 
+ * @author "Ryan Lee"
+ * @StudentID "A01365270"
+ * @Date "April 7, 2023"
+ */
 const body = document.querySelector('body');
 const darkModeButton = document.querySelector('.darkModeButton');
 const cancelButton = document.querySelector(".cancelButton");
@@ -7,6 +16,7 @@ const newNoteButton = document.querySelector(".newNoteButton");
 const noteList = document.querySelector(".left-aligned");
 const ulList = document.querySelector("ul");
 
+//Notes Array with placeholder notes
 let notesArray = [
     {title: "note one", body: "This is the first placeholder note"},
     {title: "note two", body: "This is the second placeholder note"}
