@@ -10,3 +10,15 @@ darkModeButton.addEventListener('click', () => {
     darkModeButton.textContent = 'Dark Theme';
   }
 });
+
+//Cancel Button
+const cancelButton = document.querySelector(".cancelButton");
+const saveButton = document.querySelector(".saveButton");
+const textArea = document.querySelector("textarea");
+
+cancelButton.addEventListener("click", () => {
+  // hide text area, save button, and cancel button
+  textArea.style.display = "none";
+  saveButton.style.display = "none";
+  cancelButton.style.display = "none";
+});
