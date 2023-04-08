@@ -7,14 +7,10 @@ const newNoteButton = document.querySelector(".newNoteButton");
 const noteList = document.querySelector(".left-aligned");
 const ulList = document.querySelector("ul");
 
-let notesArray = [];
-
-const placeHolder = [
-    {title: "Note One", body: "This is the first note"},
-    {title: "Note Two", body: "This is the second note"}
+let notesArray = [
+    {title: "note one", body: "This is the first placeholder note"},
+    {title: "note two", body: "This is the second placeholder note"}
 ];
-
-notesArray.concat(placeHolder);
 
 //Dark & Light Theme Toggle
 darkModeButton.addEventListener('click', () => {
@@ -59,6 +55,7 @@ saveButton.addEventListener("click", () => {
     textArea.value = "";
 });
 
+//Display Notes Listener
 ulList.addEventListener("click", (event) => {
     const noteTitle = event.target.textContent;
 
