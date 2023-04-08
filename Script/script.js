@@ -22,7 +22,14 @@ let notesArray = [
     {title: "note two", body: "This is the second placeholder note"}
 ];
 
-//Dark & Light Theme Toggle
+/**
+ * @function darkModeToggle
+ * 
+ * @description This function toggles the dark mode on and off.
+ * It also changes the text of the dark mode button to  light mode to
+ * reflect the current theme.
+ * This function also adds an event listener to the dark mode button.
+ */
 darkModeButton.addEventListener('click', () => {
   body.classList.toggle('darkMode');
   if (body.classList.contains('darkMode')) {
@@ -32,15 +39,27 @@ darkModeButton.addEventListener('click', () => {
   }
 });
 
-//Cancel Button
+/**
+ * @function cancelButton
+ * 
+ * @description This function hides the text area, save button, and cancel button
+ * when the cancel button is clicked.
+ * This function also adds an event listener to the cancel button.
+ */
 cancelButton.addEventListener("click", () => {
-  // hide text area, save button, and cancel button
   textArea.style.display = "none";
   saveButton.style.display = "none";
   cancelButton.style.display = "none";
 });
 
-//New Note Button
+/**
+ * @function newNoteButton
+ * 
+ * @description This function displays the text area, save button, and cancel button
+ * when the new note button is clicked. It also clears the text area when the textarea
+ * is already present.
+ * This function also adds an event listener to the new note button.
+ */
 newNoteButton.addEventListener('click', () => {
     textArea.style.display = 'block';
     textArea.value = '';
@@ -48,7 +67,13 @@ newNoteButton.addEventListener('click', () => {
     cancelButton.style.display = 'block';
 });
 
-//Save Button
+/**
+ * @function saveButton
+ * 
+ * @description This function saves a note to the notes array and displays it in the
+ * notes list. It also clears the text area when the save button is clicked.
+ * This function also adds an event listener to the save button.
+ */
 saveButton.addEventListener("click", () => {
     const newNoteTitle = prompt("Enter the title of the note");
 
@@ -65,7 +90,13 @@ saveButton.addEventListener("click", () => {
     textArea.value = "";
 });
 
-//Display Notes Listener
+/**
+ * @function ulList
+ * 
+ * @description This function displays the notes in the notes array when they are clicked
+ * on in the notes list.
+ * This function also adds an event listener to the ulList.
+ */
 ulList.addEventListener("click", (event) => {
     const noteTitle = event.target.textContent;
 
