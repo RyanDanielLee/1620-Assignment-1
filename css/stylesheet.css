@@ -1,3 +1,5 @@
+/* ASSIGNMENT 1 STYLES */
+
 /* General HTML Styles*/
 html,
 body {
@@ -156,4 +158,41 @@ textarea {
   textarea {
     height: 7em;
   }
+}
+
+/* ASSIGNMENT 2 STYLES */
+
+/* DARK MODE */
+.darkMode {
+  background-color: #222;
+  color: #fff;
+}
+
+.darkMode .leftColumnColor {
+  background-color: #333;
+}
+
+.darkMode .mainColor {
+  background-color: #444;
+}
+
+.darkMode h1,
+.darkMode h3,
+.darkMode p,
+.darkMode ul li {
+  color: white;
+}
+
+.darkMode button {
+  background-color: white;
+  color: #222;
+}
+
+body .darkMode {
+  background-color: #242424;
+  color: #e0e0e0;
+}
+
+.leftColumnColor .darkMode {
+  background-color: #1c1c1c;
 }
